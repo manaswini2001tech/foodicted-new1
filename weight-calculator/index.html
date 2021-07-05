@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/gif/png" href="/weight-removebg-preview.png">
+
+  <title>Weight Converter</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<title>Weight Converter</title>
+    
+</head>
+<body onload="setPounds()">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center mb-3">Weight Converter</h1>
+                <form id="myForm" onsubmit="event.preventDefault()">
+                   <div class= "buttons mb-4">
+                        <button type="button" 
+                               class="btn btn-warning" 
+                               id='lbsButton'>pounds</button>
+                        <button type="button" 
+                               class="btn btn-danger" 
+                               id='ouncesButton'>ounces</button>
+                        <button type="button" 
+                               class="btn btn-success" 
+                               id='kilogramsButton'>kilograms</button>
+                        <button type="button" 
+                               class="btn btn-primary" 
+                               id='gramsButton'>grams</button>
+                   </div>
+                   
+                    <div class="form-group">
+                        <input 
+                        id="genericInput"
+                        type="number" 
+                        class="form-control form-control-lg" 
+                        placeholder="Enter pounds...">
+                    </div>
+                </form>
+                <div id="output">
+                    <div class="card bg-warning mb-2" id="lbsCard">
+                        <div class="card-block">
+                            <strong>Pounds:</strong>
+                            <span id="lbsOutput"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="card bg-danger mb-2" id="ouncesCard">
+                        <div class="card-block">
+                            <strong>Ounces:</strong>
+                            <span id="ouncesOutput"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="card bg-success mb-2" id="kilogramsCard">
+                        <div class="card-block">
+                            <strong>Kilograms:</strong>
+                            <span id="kilogramsOutput"></span>
+                        </div>
+                    </div>
+                    <div class="card bg-primary mb-5" id="gramsCard">
+                        <div class="card-block">
+                            <strong>Grams:</strong>
+                            <span id="gramsOutput"></span>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

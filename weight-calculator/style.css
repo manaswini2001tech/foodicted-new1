@@ -1,0 +1,32 @@
+body {
+  margin-top: 20px;
+  background-color: #333;
+  color: #fff;
+}
+        
+.card, .card-block {
+  padding: .5em;
+}
+
+.card {
+  width:100%;
+}
+
+.buttons {
+  text-align: center;
+
+}
+/*
+this keeps the buttons from overlapping 
+when the screen resizes
+*/
+@media (min-width:768px) {
+  .container {
+    max-width: 760px !important; 
+
+  }
+}
+
+span {
+  float: right;
+}
