@@ -12,7 +12,8 @@
 body {
   height: 100vh;
   padding: 35px;
-background-image: url(Ba.jpg);
+/* background-image: url(Ba.jpg); */
+background-color: pink;
 
 background-repeat: no-repeat;
 background-size: cover;
